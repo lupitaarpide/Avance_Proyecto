@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+
     /// Para guardar libros, y mas adelnate se generen reportes
     static ArrayList<Usuario> listaUsuarios = new ArrayList<>();
     static ArrayList<Libro> listaLibros = new ArrayList<>();
@@ -18,6 +19,7 @@ public class Main {
 
             if (nombre.matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+")) {
                 return nombre;
+
             } else {
                 System.out.println("Vuelve a intentarlo SOLO CON LETRAS. PONTE PILAS!!!!");
                 System.out.print("Intenta OTRA VEZ: ");
@@ -58,13 +60,12 @@ public class Main {
         return texto;
     }
 
-    public static void main(String[] args) {
-
+      static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcion;
 
         do {
-            System.out.println("\n===== BIBLIOTECA MASTER =====");
+            System.out.println("\n===== BIBLIOTECA MASTER-PRO =====");
             System.out.println("1. Registrar usuario");
             System.out.println("2. Registrar libro");
             System.out.println("3. Registrar préstamo");
@@ -156,7 +157,7 @@ public class Main {
                     break;
                 }
 
-                case 4:
+                case 4:{
                     if (listaLibros.isEmpty()) {
                         System.out.println("No hay libros registrados.");
                     } else {
@@ -169,6 +170,7 @@ public class Main {
                         }
                     }
                     break;
+                    }
 
                 case 5:
                     System.out.print("Ingrese TITULO del libro a eliminar: ");

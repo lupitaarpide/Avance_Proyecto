@@ -2,8 +2,8 @@ package Proyecto_final;
 
 public class Usuario {
 
-    private String id;
-    private String nombre;
+    private final String id;
+    private final String nombre;
     private int prestamosActivos;
 
     private static final int MAX_PRESTAMOS = 3;
@@ -21,12 +21,6 @@ public class Usuario {
     public void agregarPrestamo() {
         if (puedePedir()) {
             prestamosActivos++;
-        }
-    }
-
-    public void quitarPrestamo() {
-        if (prestamosActivos > 0) {
-            prestamosActivos--;
         }
     }
 
