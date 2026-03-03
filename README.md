@@ -111,3 +111,6 @@ __Se modificaron y eliminaron los siguientes atributos y metodos ya que no son r
 - Se modificaron los atributos __private String id y private String nombre__ y se declararon como final ya que una vez tienen un valor asignado, no se vuelve a modificar.
 - Se elimino el metodo __public void quitarPrestamo()__ porque en ninguna parte del codigo es requerido.
 
+---
+
+## Capturas de pantalla:
